@@ -1,8 +1,9 @@
+This package is currently maitainer by Jan Hubicka  <hubicka@freesoft.cz>.
+Original author of the aavga wrapper is Greag Alexander.
+
 aavga: Simple svgalib dropin replacement that utilizes aalib.
 this includes aalib statically linked.  get aalib from:
-ftp://ftp.ta.jcu.cz/pub/aa/
-the aa-project webpage is at:
-http://www.ta.jcu.cz/aa/
+http://aa-project.sourceforge.net
 
 Big thanks to the AA-project people, bb kicks ass, aa kicks big ass, and it
 made this whole thing so damn easy it's not even funny.  Since sdoom should
