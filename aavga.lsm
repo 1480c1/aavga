@@ -1,15 +1,15 @@
 Begin3
 Title:		aavga
-Version:	0.9
-Entered-date:	October 3, 1997
+Version:	1.0rc1
+Entered-date:	Apr 18, 2001
 Description:	drop-in replacement for svgalib to wrap around aa, a
 		wonderful ascii art library.  allows squake to run in text
 		mode.
 Keywords:	textmode quake ascii
 Author: 	galexand@sietch.bloomington.in.us (Greg Alexander)
-Maintained-by:	galexand@sietch.bloomington.in.us (Greg Alexander)
-Primary-site:	http://www.cia-g.com/~sietch
-		42k aavga-0.9.tgz
+Maintained-by:	hubicka@freesoft.cz (Jan Hubicka)
+Primary-site:	aa-project.sourceforge.net /pub/aa/aalib
+		42k aavga-1.0.tgz
 Alternate-site: 
 Original-site:	
 Platforms:	linux
