@@ -1,0 +1,51 @@
+aavga: Simple svgalib dropin replacement that utilizes aalib.
+this includes aalib statically linked.  get aalib from:
+ftp://ftp.ta.jcu.cz/pub/aa/
+the aa-project webpage is at:
+http://www.ta.jcu.cz/aa/
+
+Big thanks to the AA-project people, bb kicks ass, aa kicks big ass, and it
+made this whole thing so damn easy it's not even funny.  Since sdoom should
+run with this, I hope I'm helpful in attaining some of your world-dominance
+goals.
+
+Read this whole document before proceeding, as there is some importance to
+removing suid root on the programs before running them with the new libvga.
+
+Just copy aavga.so to /usr/lib/libvga.so.1.2.13 (make sure that the version
+number is larger than the version number on any real libvga) and run
+ldconfig and run squake or any other really simple svgalib program.  You'll
+probably want to make a non-suid-root copy of squake for this fiddling, as
+aavga does not give up root.  To revert to real svgalib, just delete the new
+libvga you have copied in, and run ldconfig, and it will recognize the
+'older' (real) svgalib.
+
+in 80x25 text mode, it looks recognizable.  In 160x60 text mode, it looks
+pretty.  If you have a textmode that is not an even divisor of 320x200,
+don't be surprised at the empty space.  it can't really be helped without
+some serious speed sacrifices.  best theoretical mode is: 160x100.  worst is
+80x25.
+
+The keyboard driver is fudged a little.  It will usually (bugs are fun, I
+don't care) consider a key to be held down until another one is released. 
+Making navigation quite fun.  I'd recommend finding an unbound key to press
+to stop yourself.  I'd fix this, but, uh, it's all the "oh, wow, 160x60
+text-mode quake...WOW!" thing, and I don't intend to actually play this.
+
+aavga is copyright (C) Greg Alexander <galexand@sietch.bloomington.in.us>,
+and is to be distributed under the terms of the GNU Public License, to be
+found in the file COPYING that you should have received with this program. 
+There is no warranty, express or implied.  Especially if you forget to take
+away the suid root on your svgalib programs, this might actually be
+dangerous.  SO BE CAREFUL!
+
+Feel free to modify it and whatever.  I'd appreciate it if any modifications
+that are made would make it back to me.  I don't think I've done a very good
+job with this, but I was the first to try it.  I expect that if anyone
+actually wants to use this even pseudo-seriously, they will need to improve
+it tremendously from my base; most notably, a more direct keyboard driver is
+needed.  I'd also like to hear any success stories for anything other than
+quake and maybe doom (sdoom had essentially the same video driver as squake
+in the way that it interfaced with svgalib at 320x200).
+
+Have fun!
